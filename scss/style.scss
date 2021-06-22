@@ -4,13 +4,15 @@
 foundation
 -------------------------------------------------------- */
 @import "../scss/foundation/ress";
+@import "../scss/foundation/responsive";
 @import "../scss/foundation/base";
 
 
 /* --------------------------------------------------------
 layout
 -------------------------------------------------------- */
-@import "../scss/layout/header";
+@import "../scss/layout/body";
+@import "../scss/layout/main";
 
 /* --------------------------------------------------------
 component
@@ -20,3 +22,4 @@ component
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
+@import "../scss/object/project/front-page";

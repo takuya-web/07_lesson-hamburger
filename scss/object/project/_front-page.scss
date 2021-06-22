@@ -1,0 +1,61 @@
+@import "../../foundation/responsive";
+@import "../../foundation/mixin";
+
+.p-header {
+  background-color: #FFF7EF;
+
+  @include iPhone {
+    text-align: center;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    padding: 40px 0 38px 0;
+  }
+}
+
+.p-serch-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__search {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    @include iPhone {
+      height: 46px;
+    }
+  }
+  &__submit {
+    background-color: #F2EDE9;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    @include iPhone {
+    
+      font-size: 1rem;
+      padding: 10px 23px; 
+      margin: 0 0 0 12px;
+    }
+  }
+  @include iPhone {
+    padding: 0 31px 40px 24px;
+  }
+}
+
+.p-main-visual {
+  background-image: url("../../../images/index_mainvisual_img01.svg");
+  background-size: cover;
+  width: 100%;
+
+  @include iPhone {
+    height: 285px;
+  }
+
+  & h1 {
+    font-size: 36px;
+    color: #fff;
+    padding: 119px 134px 115px 25px;
+  }
+}
