@@ -10,8 +10,10 @@
   <!-- title -->
   <title>Hamburger</title>
   <!-- Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
   <!-- Favicon -->
 </head>
 <body class="l-body">
@@ -20,7 +22,7 @@
   <aside class="c-sidebar">
     <!-- クローズボタン -->
     <button class="c-close__button"></button>
-
+    <!-- メニュー -->
     <h2>バーガー</h2>
     <ul>
       <li>ハンバーガー</li>
@@ -51,11 +53,13 @@
 
 
   <header class="p-header">
-    <h1 class="p-header__logo">Hamburger</h1>
-      <form class="p-serch-form">
-        <input class="p-serch-form__search" type="search" name="search" placeholder="">
-        <input class="p-serch-form__submit" type="submit" name="submit" value="検索">
-      </form>
+    <article class="p-header__wrapper">
+      <h1 class="p-header__logo">Hamburger</h1>
+        <form class="p-serch-form">
+          <input class="p-serch-form__search" type="search" name="search" placeholder="">
+          <input class="p-serch-form__submit" type="submit" name="submit" value="検索">
+        </form>
+    </article>
 
       <!-- menuボタン -->
       <button class="p-menu__button">
@@ -115,8 +119,10 @@
       <li>ヒストリー</li>
     </ul>
     <address class="p-copyright">Copyright: RaiseTech</address>
-    
   </footer>
+
+  <!-- fade-layer -->
+  <div class="p-fade-layer"></div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>

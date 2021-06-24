@@ -4,6 +4,14 @@
 //メニューボタン
 .p-menu__button {
   display: none;
+  @include iPad {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 26px;
+    font-size: 2.125rem;
+    color: #707070;
+  }
   @include iPhone {
     display: block;
     position: absolute;
@@ -16,15 +24,27 @@
 
 .p-header {
   background-color: #FFF7EF;
-
+  @include iPad {
+    text-align: center;
+  }
   @include iPhone {
     text-align: center;
   }
-
   &__logo {
-    font-size: 2.5rem;
-    padding: 40px 0 38px 0;
+    font-size: 4rem;
+    padding: 67px 0 66px 65px;
     color: #707070;
+    @include iPad {
+      font-size: 2.5rem;
+      padding: 40px 0 38px 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include iPad {
+      display: initial;
+    }
   }
 }
 
@@ -32,64 +52,116 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 86px 397px 85px 0;
   &__search {
-    width: 100%;
+    width: 396px;
+    height: 46px;
     background-color: #fff;
     border: 1px solid #707070;
     border-radius: 10px;
+    @include iPad {
+      height: 46px;
+      width: 396px;
+    }
     @include iPhone {
       height: 46px;
+      width: 230px;
     }
   }
   &__submit {
     background-color: #F2EDE9;
     border: 1px solid #707070;
+    width: 136px;
+    height: 46px;
+    margin: 0 0 0 14px;
     border-radius: 10px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1rem;
+    @include iPad {
+      padding: 10px 51px;
+    }
     @include iPhone {
-    
-      font-size: 1rem;
-      padding: 10px 23px; 
+      width: 78px;
+      padding: 10px 22px; 
       margin: 0 0 0 12px;
     }
   }
+  @include iPad {
+    padding: 0 0 40px 0;
+  }
   @include iPhone {
-    padding: 0 31px 40px 24px;
+    padding: 0 0 40px 0;
   }
 }
 
 .p-main-visual {
   background-image: url("../../../images/index_mainvisual_img01.svg");
   background-size: cover;
+  background-position: 50%;
   width: 100%;
+  height: 530px;
+  margin: 0 367px 0 0;
 
+  @include iPad {
+    height: 285px;
+    background-position: 0 50%;
+    margin: 0;
+  }
   @include iPhone {
     height: 285px;
+    background-position: 50% 0;
   }
 
   & h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
     color: #fff;
-    padding: 119px 134px 115px 25px;
+    font-family: 'M PLUS 1p', sans-serif;
+    padding: 231px 0 0 86px;
+    @include iPad {
+      font-size: 2.25rem;
+      padding: 119px 0 0 86px;
+    }
+    @include iPhone {
+      padding: 119px 0 0 25px;
+    }
   }
 }
 
 .p-branch-menu {
+  & ul {
+    display: flex;
+    justify-content: center;
+    @include iPhone {
+      display: initial;
+    }
+  }
   &__take-out-01 {
     background-image: url(../../../images/index_main_img01.svg);
     background-size: cover;
     list-style: none;
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1193px;
+    margin: 120px 40px 134px 111px;
+    padding: 0 11px 11px 12px;
+    @include iPad {
+      height: 681px;
+      margin: 40px 20px 40px 40px;
+      padding: 0 11px 11px 12px;
+    }
     @include iPhone {
-      display: flex;
-      flex-direction: column;
       height: 642px;
       margin: 20px;
       padding: 10px;
     }
     & h2 {
-      font-size: 2.5625rem;
+      font-size: 5rem;
       color: #EAEAEA;
+      font-family: 'M PLUS 1p', sans-serif;
+      @include iPad {
+        font-size: 2.5625rem;
+      }
     }
     & h2::after {
       display: block;
@@ -98,32 +170,35 @@
       padding: 19.3px 0 0 13.5px;
       border-bottom: 4px solid #fff;
     }
-  }
-
-  &__small-01 {
-    @include branch-menu__small;
-    margin: auto 0 0 0;
-  }
-  &__small-02 {
-    @include branch-menu__small;
-    margin:9px 0 0 0;
   }
 
   &__take-out-02 {
     background-image: url(../../../images/index_main_img02.svg);
     background-size: cover;
     list-style: none;
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1193px;
+    margin: 120px 111px 134px 40px;
+    padding: 0 11px 11px 12px;
+    @include iPad {
+      height: 681px;
+      margin: 40px 40px 40px 20px;
+      padding: 0 11px 11px 12px;
+    }
     @include iPhone {
-      display: flex;
-      flex-direction: column;
       height: 642px;
       margin: 20px;
       padding: 10px;
     }
     & h2 {
-      font-size: 2.5625rem;
+      font-size: 5rem;
       color: #EAEAEA;
+      font-family: 'M PLUS 1p', sans-serif;
+      @include iPad {
+        font-size: 2.5625rem;
+      }
     }
     & h2::after {
       display: block;
@@ -140,12 +215,17 @@
   }
   &__small-02 {
     @include branch-menu__small;
-    margin:9px 0 0 0;
+    margin: 9px 0 0 0;
   }
 }
 
 @mixin spacer {
-  height: 691px;
+  @include iPad {
+    height: 415px;
+  }
+  @include iPhone {
+    height: 691px;
+  }
 }
 .p-access {
   position: relative;
@@ -163,14 +243,14 @@
     @include spacer;
 
     & h2 {
-      padding: 40px 0 0 44px;
+      padding: 40px 0 0 42px;
       font-size: 1.875rem;
     }
     & h2::after {
       display: block;
       content: "";
       width: 75px;
-      padding: 19.3px 0 0 13.5px;
+      padding: 20px 0 0 20px;
       border-bottom: 2px solid #fff;
     }
     & p {
@@ -183,4 +263,29 @@
   &__spacer {
     @include spacer;
   }
+}
+
+.p-footer {
+  background-color: #9D8670;
+  text-align: center;
+  color: #fff;
+  font-family: 'M PLUS 1p', sans-serif;
+  height: 150px;
+  &__menu {
+    list-style: none;
+    display: flex;
+    padding: 39px 0 34px 0;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  & li {
+    padding: 0 10px;
+  }
+  & li+ li {
+    border-left: 2px solid #fff;
+  }
+}
+.p-copyright {
+  padding: 0 0 0 0;
+  font-size: 0.875rem;
 }

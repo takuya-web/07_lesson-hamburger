@@ -8,7 +8,7 @@ $sm : 392px;
 }
 
 // レスポンシブ対応(iPad)
-$md : 834px;
+$md : 851px;
 
 @mixin iPad {
   @media screen and (max-width: $md) {
