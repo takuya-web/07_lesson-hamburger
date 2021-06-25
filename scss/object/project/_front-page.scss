@@ -23,8 +23,10 @@
 }
 
 .p-header {
+  margin: 0 367px 0 0;
   background-color: #FFF7EF;
   @include iPad {
+    margin: 0;
     text-align: center;
   }
   @include iPhone {
@@ -52,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 86px 397px 85px 0;
+  padding: 86px 30px 85px 0;
   &__search {
     width: 396px;
     height: 46px;
@@ -138,6 +140,7 @@
   &__take-out-01 {
     background-image: url(../../../images/index_main_img01.svg);
     background-size: cover;
+    background-position: 50%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -151,6 +154,7 @@
       padding: 0 11px 11px 12px;
     }
     @include iPhone {
+      width: auto;
       height: 642px;
       margin: 20px;
       padding: 10px;
@@ -175,6 +179,7 @@
   &__take-out-02 {
     background-image: url(../../../images/index_main_img02.svg);
     background-size: cover;
+    background-position: 50%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -188,6 +193,7 @@
       padding: 0 11px 11px 12px;
     }
     @include iPhone {
+      width: auto;
       height: 642px;
       margin: 20px;
       padding: 10px;
@@ -219,32 +225,42 @@
   }
 }
 
-@mixin spacer {
-  @include iPad {
-    height: 415px;
-  }
-  @include iPhone {
-    height: 691px;
-  }
-}
+
 .p-access {
   position: relative;
   & iframe {
     position: absolute;
     z-index: 0;
     width: 100%;
-    @include spacer;
+    height: 649px;
+    @include iPad {
+      height: 415px;
+    }
+    @include iPhone {
+      height: 691px;
+    }
   }
   &__content {
     position: absolute;
     background-color: #000;
     opacity: 0.29;
     color: #fff;
-    @include spacer;
+    max-width: 950px;
+    height: 649px;
+    @include iPad {
+      height: 415px;
+    }
+    @include iPhone {
+      height: 691px;
+    }
 
     & h2 {
-      padding: 40px 0 0 42px;
-      font-size: 1.875rem;
+      padding: 83px 0 0 119px;
+      font-size: 2.25rem;
+      @include iPad {
+        padding: 40px 0 0 42px;
+        font-size: 1.875rem;
+      };
     }
     & h2::after {
       display: block;
@@ -254,16 +270,17 @@
       border-bottom: 2px solid #fff;
     }
     & p {
-      padding: 20px 40px 0 40px;
-      font-size: 0.875rem;
+      padding: 63.5px 134px 0 119px;
+      font-size: 1rem;
       line-height: 2.0;
+      @include iPad {
+        padding: 20px 40px 0 40px;
+        font-size: 0.875rem;
+      }
     }
   }
-
-  &__spacer {
-    @include spacer;
-  }
 }
+
 
 .p-footer {
   background-color: #9D8670;
@@ -271,6 +288,13 @@
   color: #fff;
   font-family: 'M PLUS 1p', sans-serif;
   height: 150px;
+  margin: 649px 367px 0 0;
+  @include iPad {
+    margin: 415px 0 0 0;
+  }
+  @include iPhone {
+    margin: 711px 0 0 0;
+  }
   &__menu {
     list-style: none;
     display: flex;
@@ -286,6 +310,6 @@
   }
 }
 .p-copyright {
-  padding: 0 0 0 0;
+  padding: 0;
   font-size: 0.875rem;
 }

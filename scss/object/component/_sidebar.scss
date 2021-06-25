@@ -11,6 +11,7 @@
   width: 367px;
   height: 100%;
   padding: 178px 0 0 0;
+  overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
   }
