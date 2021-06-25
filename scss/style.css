@@ -434,12 +434,12 @@ component
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
-.p-menu__button {
+.p-header__menu-button {
   display: none;
 }
 
 @media screen and (max-width: 851px) {
-  .p-menu__button {
+  .p-header__menu-button {
     display: block;
     position: absolute;
     top: 18px;
@@ -450,7 +450,7 @@ project
 }
 
 @media screen and (max-width: 392px) {
-  .p-menu__button {
+  .p-header__menu-button {
     display: block;
     position: absolute;
     top: 14px;

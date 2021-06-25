@@ -1,0 +1,98 @@
+@import "../../foundation/responsive";
+@import "../../foundation/mixin";
+
+.p-branch-menu {
+  & ul {
+    display: flex;
+    justify-content: center;
+    @include iPhone {
+      display: initial;
+    }
+  }
+  &__take-out-01 {
+    background-image: url(../../../images/index_main_img01.svg);
+    background-size: cover;
+    background-position: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1193px;
+    margin: 120px 40px 134px 111px;
+    padding: 0 11px 11px 12px;
+    @include iPad {
+      height: 681px;
+      margin: 40px 20px 40px 40px;
+      padding: 0 11px 11px 12px;
+    }
+    @include iPhone {
+      width: auto;
+      height: 642px;
+      margin: 20px;
+      padding: 10px;
+    }
+    & h2 {
+      font-size: 5rem;
+      color: #EAEAEA;
+      font-family: 'M PLUS 1p', sans-serif;
+      @include iPad {
+        font-size: 2.5625rem;
+      }
+    }
+    & h2::after {
+      display: block;
+      content: "";
+      width: 33.89px;
+      padding: 19.3px 0 0 13.5px;
+      border-bottom: 4px solid #fff;
+    }
+  }
+
+  &__take-out-02 {
+    background-image: url(../../../images/index_main_img02.svg);
+    background-size: cover;
+    background-position: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1193px;
+    margin: 120px 111px 134px 40px;
+    padding: 0 11px 11px 12px;
+    @include iPad {
+      height: 681px;
+      margin: 40px 40px 40px 20px;
+      padding: 0 11px 11px 12px;
+    }
+    @include iPhone {
+      width: auto;
+      height: 642px;
+      margin: 20px;
+      padding: 10px;
+    }
+    & h2 {
+      font-size: 5rem;
+      color: #EAEAEA;
+      font-family: 'M PLUS 1p', sans-serif;
+      @include iPad {
+        font-size: 2.5625rem;
+      }
+    }
+    & h2::after {
+      display: block;
+      content: "";
+      width: 33.89px;
+      padding: 19.3px 0 0 13.5px;
+      border-bottom: 4px solid #fff;
+    }
+  }
+
+  &__small-01 {
+    @include branch-menu__small;
+    margin: auto 0 0 0;
+  }
+  &__small-02 {
+    @include branch-menu__small;
+    margin: 9px 0 0 0;
+  }
+}

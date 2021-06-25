@@ -1,0 +1,56 @@
+@import "../../foundation/responsive";
+
+.p-access {
+  position: relative;
+  & iframe {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 649px;
+    @include iPad {
+      height: 415px;
+    }
+    @include iPhone {
+      height: 691px;
+    }
+  }
+  &__content {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.29;
+    color: #fff;
+    max-width: 950px;
+    height: 649px;
+    @include iPad {
+      height: 415px;
+    }
+    @include iPhone {
+      height: 691px;
+    }
+
+    & h2 {
+      padding: 83px 0 0 119px;
+      font-size: 2.25rem;
+      @include iPad {
+        padding: 40px 0 0 42px;
+        font-size: 1.875rem;
+      };
+    }
+    & h2::after {
+      display: block;
+      content: "";
+      width: 75px;
+      padding: 20px 0 0 20px;
+      border-bottom: 2px solid #fff;
+    }
+    & p {
+      padding: 63.5px 134px 0 119px;
+      font-size: 1rem;
+      line-height: 2.0;
+      @include iPad {
+        padding: 20px 40px 0 40px;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
