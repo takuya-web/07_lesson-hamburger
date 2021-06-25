@@ -2,20 +2,19 @@
 
 // サイドバー
 .c-sidebar {
-  position: fixed;
+  position: absolute;
   right: 0;
   z-index: 10;
-  // -webkit-overflow-scrolling: touch;
   background-color: #F2EDE9;
   color: #707070;
   width: 367px;
-  height: 100%;
   padding: 178px 0 0 0;
-  overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
   }
+  // -webkit-overflow-scrolling: touch;
   @include iPad {
+    position: fixed;
     display: none;
     overflow-y: scroll;
   }

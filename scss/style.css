@@ -325,16 +325,20 @@ progress {
   cursor: default;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* --------------------------------------------------------
 layout
 -------------------------------------------------------- */
-body {
+.l-body {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
 .l-main {
-  margin: 0 367px 0 0;
+  margin-right: 367px;
 }
 
 @media screen and (max-width: 851px) {
@@ -356,15 +360,13 @@ body {
 component
 -------------------------------------------------------- */
 .c-sidebar {
-  position: fixed;
+  position: absolute;
   right: 0;
   z-index: 10;
   background-color: #F2EDE9;
   color: #707070;
   width: 367px;
-  height: 100%;
   padding: 178px 0 0 0;
-  overflow-y: scroll;
 }
 
 .c-sidebar::-webkit-scrollbar {
@@ -373,6 +375,7 @@ component
 
 @media screen and (max-width: 851px) {
   .c-sidebar {
+    position: fixed;
     display: none;
     overflow-y: scroll;
   }
