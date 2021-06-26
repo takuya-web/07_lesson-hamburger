@@ -1,5 +1,7 @@
 @import "../../foundation/responsive";
+@import "../../foundation/color.scss";
 
+//トップページ
 .p-main-visual {
   background-image: url("../../../images/index_mainvisual_img01.svg");
   background-size: cover;
@@ -20,7 +22,7 @@
 
   & h1 {
     font-size: 2.5rem;
-    color: #fff;
+    color: $white;
     font-family: 'M PLUS 1p', sans-serif;
     padding: 231px 0 0 86px;
     @include iPad {
@@ -31,4 +33,10 @@
       padding: 119px 0 0 25px;
     }
   }
+}
+
+
+//archiveページ
+.p-main-visual__archive {
+  
 }

@@ -1,4 +1,5 @@
 @import "../../foundation/responsive";
+@import "../../foundation/color.scss";
 
 //メニューボタン
 .p-header__menu-button {
@@ -9,7 +10,7 @@
     top: 18px;
     right: 26px;
     font-size: 2.125rem;
-    color: #707070;
+    color: $gray;
   }
   @include iPhone {
     display: block;
@@ -17,13 +18,12 @@
     top: 14px;
     right: 16px;
     font-size: 1.25rem;
-    color: #707070;
   }
 }
 
 .p-header {
   margin: 0 367px 0 0;
-  background-color: #FFF7EF;
+  background-color: $linen;
   @include iPad {
     margin: 0;
     text-align: center;
@@ -34,7 +34,7 @@
   &__logo {
     font-size: 4rem;
     padding: 67px 0 66px 65px;
-    color: #707070;
+    color: $gray;
     @include iPad {
       font-size: 2.5rem;
       padding: 40px 0 38px 0;
@@ -58,8 +58,8 @@
   &__search {
     width: 396px;
     height: 46px;
-    background-color: #fff;
-    border: 1px solid #707070;
+    background-color: $white;
+    border: 1px solid $gray;
     border-radius: 10px;
     @include iPad {
       height: 46px;
@@ -71,8 +71,8 @@
     }
   }
   &__submit {
-    background-color: #F2EDE9;
-    border: 1px solid #707070;
+    background-color: $lite-gray;
+    border: 1px solid $gray;
     width: 136px;
     height: 46px;
     margin: 0 0 0 14px;

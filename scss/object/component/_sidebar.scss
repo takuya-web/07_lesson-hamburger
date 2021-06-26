@@ -1,12 +1,13 @@
 @import "../../foundation/responsive";
+@import "../../foundation/color.scss";
 
 // サイドバー
 .c-sidebar {
   position: absolute;
   right: 0;
   z-index: 10;
-  background-color: #F2EDE9;
-  color: #707070;
+  background-color: $lite-gray;
+  color: $gray;
   width: 367px;
   height: 100%;
   padding: 178px 0 0 0;
