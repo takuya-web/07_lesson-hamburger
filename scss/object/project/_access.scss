@@ -16,6 +16,7 @@
   }
   &__content {
     position: absolute;
+    z-index: 2;
     background-color: #000;
     opacity: 0.29;
     color: #fff;
@@ -36,13 +37,7 @@
         font-size: 1.875rem;
       };
     }
-    & h2::after {
-      display: block;
-      content: "";
-      width: 75px;
-      padding: 20px 0 0 20px;
-      border-bottom: 2px solid #fff;
-    }
+    @include h2-bottom-bar__access;
     & p {
       padding: 63.5px 134px 0 119px;
       font-size: 1rem;

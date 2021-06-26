@@ -1,5 +1,5 @@
 $(function() {
-  $(".p-menu__button").click(function() {
+  $(".p-header__menu-button").click(function() {
     $(".c-sidebar").show("slide" , {direction: "right"} , 200);
     $(".p-fade-layer").css("visibility","visible");
 

@@ -1,5 +1,4 @@
 // branch-menu__small
-
 @mixin branch-menu__small {
   background-color: #FFF;
   opacity: 0.8;
@@ -38,5 +37,27 @@
       height: 72px;
       padding: 0 14px 23px 10px;
     }
+  }
+}
+
+// h2ボトムバー
+@mixin h2-bottom-bar {
+  & h2::after {
+    display: block;
+    content: "";
+    width: 33.89px;
+    padding: 19.3px 0 0 13.5px;
+    border-bottom: 4px solid #fff;
+  }
+}
+
+// h2ボトムバー(access用)
+@mixin h2-bottom-bar__access {
+  & h2::after {
+    display: block;
+    content: "";
+    width: 75px;
+    padding: 19.3px 0 0 13.5px;
+    border-bottom: 4px solid #fff;
   }
 }

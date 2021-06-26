@@ -366,6 +366,7 @@ component
   background-color: #F2EDE9;
   color: #707070;
   width: 367px;
+  height: 100%;
   padding: 178px 0 0 0;
 }
 
@@ -517,6 +518,7 @@ project
       -ms-flex-pack: center;
           justify-content: center;
   padding: 86px 30px 85px 0;
+  font-size: 1rem;
 }
 
 .p-serch-form__search {
@@ -910,6 +912,7 @@ project
 
 .p-access__content {
   position: absolute;
+  z-index: 2;
   background-color: #000;
   opacity: 0.29;
   color: #fff;
@@ -945,8 +948,8 @@ project
   display: block;
   content: "";
   width: 75px;
-  padding: 20px 0 0 20px;
-  border-bottom: 2px solid #fff;
+  padding: 19.3px 0 0 13.5px;
+  border-bottom: 4px solid #fff;
 }
 
 .p-access__content p {

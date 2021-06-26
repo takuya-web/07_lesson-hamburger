@@ -39,13 +39,7 @@
         font-size: 2.5625rem;
       }
     }
-    & h2::after {
-      display: block;
-      content: "";
-      width: 33.89px;
-      padding: 19.3px 0 0 13.5px;
-      border-bottom: 4px solid #fff;
-    }
+    @include h2-bottom-bar;
   }
 
   &__take-out-02 {
@@ -78,13 +72,7 @@
         font-size: 2.5625rem;
       }
     }
-    & h2::after {
-      display: block;
-      content: "";
-      width: 33.89px;
-      padding: 19.3px 0 0 13.5px;
-      border-bottom: 4px solid #fff;
-    }
+    @include h2-bottom-bar;
   }
 
   &__small-01 {
