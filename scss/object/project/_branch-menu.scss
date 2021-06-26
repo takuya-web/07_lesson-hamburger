@@ -10,13 +10,13 @@
     }
   }
   &__take-out-01 {
-    background-image: url(../../../images/index_main_img01.svg);
+    background-image: url("../../../images/index_main_img01.svg");
     background-size: cover;
     background-position: 50%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 625px;
     height: 1193px;
     margin: 120px 40px 134px 111px;
     padding: 0 11px 11px 12px;
@@ -39,17 +39,19 @@
         font-size: 2.5625rem;
       }
     }
+    & h2::after {
     @include h2-bottom-bar;
+    }
   }
 
   &__take-out-02 {
-    background-image: url(../../../images/index_main_img02.svg);
+    background-image: url("../../../images/index_main_img02.svg");
     background-size: cover;
     background-position: 50%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 625px;
     height: 1193px;
     margin: 120px 111px 134px 40px;
     padding: 0 11px 11px 12px;
@@ -72,7 +74,9 @@
         font-size: 2.5625rem;
       }
     }
-    @include h2-bottom-bar;
+    & h2::after {
+      @include h2-bottom-bar;
+      }
   }
 
   &__small-01 {

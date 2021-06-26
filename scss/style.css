@@ -361,6 +361,23 @@ layout
 /* --------------------------------------------------------
 component
 -------------------------------------------------------- */
+.c-menu__button {
+  display: inline-block;
+  background-color: #fff;
+  color: #707070;
+  border-radius: 40px;
+  font-size: 1rem;
+  width: 43%;
+  height: 16%;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__button {
+    width: 163.16px;
+    height: 42.47px;
+  }
+}
+
 .c-sidebar {
   position: absolute;
   right: 0;
@@ -432,6 +449,82 @@ component
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
+}
+
+.c-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 30px 0;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.c-menu__container img {
+  width: 50%;
+  height: 471px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__container img {
+    width: 100%;
+    height: 230.53px;
+  }
+}
+
+.c-menu__content {
+  background-color: #3C2B1C;
+  color: #fff;
+  text-align: center;
+  width: 50%;
+  height: 471px;
+  max-height: 471px;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__content {
+    width: 100%;
+    max-height: 585.12px;
+  }
+}
+
+.c-menu__content h3 {
+  text-align: left;
+  font-size: 2.25rem;
+  padding: 8% 0 0 9%;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.c-menu__content h4 {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 8% 0 2.5% 9%;
+}
+
+@media screen and (max-width: 392px) {
+  .c-menu__content h4 {
+    font-size: 1rem;
+  }
+}
+
+.c-menu__text {
+  text-align: left;
+  font-size: 1rem;
+  padding: 0 16% 8% 9%;
 }
 
 /* --------------------------------------------------------
@@ -625,6 +718,50 @@ project
   }
 }
 
+.p-main-visual__archive {
+  background-image: url("../../../images/archive_mainvisual_img01.svg");
+  background-position: 30%;
+  position: relative;
+  height: 239px;
+  color: #fff;
+}
+
+@media screen and (max-width: 851px) {
+  .p-main-visual__archive {
+    height: 283px;
+  }
+}
+
+.p-main-visual__archive::before {
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+}
+
+@media screen and (max-width: 392px) {
+  .p-main-visual__archive::before {
+    height: 283px;
+  }
+}
+
+.p-main-visual__archive h2 {
+  position: absolute;
+  left: 37px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.p-main-visual__archive span {
+  font-size: 1rem;
+}
+
 .p-branch-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,7 +778,7 @@ project
 }
 
 .p-branch-menu__take-out-01 {
-  background-image: url(../../../images/index_main_img01.svg);
+  background-image: url("../../../images/index_main_img01.svg");
   background-size: cover;
   background-position: 50%;
   list-style: none;
@@ -652,7 +789,7 @@ project
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 625px;
   height: 1193px;
   margin: 120px 40px 134px 111px;
   padding: 0 11px 11px 12px;
@@ -696,7 +833,7 @@ project
 }
 
 .p-branch-menu__take-out-02 {
-  background-image: url(../../../images/index_main_img02.svg);
+  background-image: url("../../../images/index_main_img02.svg");
   background-size: cover;
   background-position: 50%;
   list-style: none;
@@ -707,7 +844,7 @@ project
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 625px;
   height: 1193px;
   margin: 120px 111px 134px 40px;
   padding: 0 11px 11px 12px;
@@ -1010,5 +1147,29 @@ project
 .p-copyright {
   padding: 0;
   font-size: 0.875rem;
+}
+
+.p-main-contents__archive {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.p-main-contents__archive h2 {
+  font-size: 1.75rem;
+  padding: 30px 0 0 22px;
+}
+
+.p-main-contents__top-text {
+  font-size: 1rem;
+  padding: 30px 18px 19px 22px;
+}
+
+.p-main-contents__menu-wrapper {
+  padding: 70px 100px 30px 100px;
+}
+
+@media screen and (max-width: 392px) {
+  .p-main-contents__menu-wrapper {
+    padding: 0 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

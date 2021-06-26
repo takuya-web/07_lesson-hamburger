@@ -1,3 +1,17 @@
+@import "../../foundation/responsive";
+@import "../../foundation/color.scss";
 
-
-
+// menuボタン
+.c-menu__button {
+  display: inline-block;
+  background-color: $white;
+  color: $gray;
+  border-radius: 40px;
+  font-size: 1rem;
+  width: 43%;
+  height: 16%;
+  @include iPhone {
+    width: 163.16px;
+    height: 42.47px;
+  }
+}

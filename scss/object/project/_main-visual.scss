@@ -38,5 +38,35 @@
 
 //archiveページ
 .p-main-visual__archive {
-  
+  background-image: url("../../../images/archive_mainvisual_img01.svg");
+  background-position: 30%;
+  position: relative;
+  height: 239px;
+  color: $white;
+  @include iPad {
+    height: 283px;
+  }
+  &::before {
+    background-color: $black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    @include iPhone {
+      height: 283px;
+    }
+  }
+  & h2 {
+    position: absolute;
+    left: 37px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+  & span {
+    font-size: 1rem;
+  }
 }

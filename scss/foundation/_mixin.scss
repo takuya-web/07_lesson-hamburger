@@ -42,22 +42,18 @@
 
 // h2ボトムバー
 @mixin h2-bottom-bar {
-  & h2::after {
-    display: block;
-    content: "";
-    width: 33.89px;
-    padding: 19.3px 0 0 13.5px;
-    border-bottom: 4px solid $white;
-  }
+  display: block;
+  content: "";
+  width: 33.89px;
+  padding: 19.3px 0 0 13.5px;
+  border-bottom: 4px solid $white;
 }
 
 // h2ボトムバー(access用)
 @mixin h2-bottom-bar__access {
-  & h2::after {
-    display: block;
-    content: "";
-    width: 75px;
-    padding: 19.3px 0 0 13.5px;
-    border-bottom: 4px solid $white;
-  }
+  display: block;
+  content: "";
+  width: 75px;
+  padding: 19.3px 0 0 13.5px;
+  border-bottom: 4px solid $white;
 }

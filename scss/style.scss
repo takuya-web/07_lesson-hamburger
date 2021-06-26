@@ -20,6 +20,8 @@ component
 @import "../scss/object/component/button";
 @import "../scss/object/component/sidebar";
 
+@import "../scss/object/component/menu";
+
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
@@ -28,3 +30,5 @@ project
 @import "../scss/object/project/branch-menu";
 @import "../scss/object/project/access";
 @import "../scss/object/project/footer";
+
+@import "../scss/object/project/main-contents";
