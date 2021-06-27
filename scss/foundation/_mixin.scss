@@ -30,15 +30,16 @@
     padding: 0 25px 0 19px;
     height: 97px;
     @include iPad {
-      height: 76px;
       padding: 0 15px 22px 11px;
     }
     @include iPhone {
       height: 72px;
       padding: 0 14px 23px 10px;
+      overflow: hidden;
     }
   }
 }
+
 
 // h2ボトムバー
 @mixin h2-bottom-bar {
@@ -56,4 +57,18 @@
   width: 75px;
   padding: 19.3px 0 0 13.5px;
   border-bottom: 4px solid $white;
+}
+
+
+// arrow
+@mixin arrow {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid $gray;
+  border-right: 2px solid $gray;
 }

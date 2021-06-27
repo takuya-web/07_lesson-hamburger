@@ -527,6 +527,12 @@ component
   padding: 0 16% 8% 9%;
 }
 
+@media screen and (max-width: 392px) {
+  .c-menu__text {
+    padding: 0 16% 12% 9%;
+  }
+}
+
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
@@ -574,8 +580,10 @@ project
 }
 
 .p-header__logo {
-  font-size: 4rem;
-  padding: 67px 0 66px 65px;
+  display: inline-block;
+  font-size: 3.344vw;
+  vertical-align: middle;
+  margin: auto 0 auto 4.232%;
   color: #707070;
 }
 
@@ -583,6 +591,13 @@ project
   .p-header__logo {
     font-size: 2.5rem;
     padding: 40px 0 38px 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .p-header__logo {
+    font-size: 10.257vw;
   }
 }
 
@@ -605,6 +620,7 @@ project
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -617,6 +633,7 @@ project
 
 .p-serch-form__search {
   width: 396px;
+  min-width: 0;
   height: 46px;
   background-color: #fff;
   border: 1px solid #707070;
@@ -702,7 +719,7 @@ project
   font-size: 2.5rem;
   color: #fff;
   font-family: 'M PLUS 1p', sans-serif;
-  padding: 231px 0 0 86px;
+  padding: 231px 0 0 5.599%;
 }
 
 @media screen and (max-width: 851px) {
@@ -769,6 +786,13 @@ project
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 7.8% 9.5% 11.48% 9.5%;
+}
+
+@media screen and (max-width: 851px) {
+  .p-branch-menu ul {
+    padding: 4.8%;
+  }
 }
 
 @media screen and (max-width: 392px) {
@@ -790,15 +814,16 @@ project
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 625px;
+  min-width: 50%;
   height: 1193px;
-  margin: 120px 40px 134px 111px;
+  margin: 0 3.2% 0 0;
   padding: 0 11px 11px 12px;
 }
 
 @media screen and (max-width: 851px) {
   .p-branch-menu__take-out-01 {
     height: 681px;
-    margin: 40px 20px 40px 40px;
+    margin: 0 2.66% 0 0;
     padding: 0 11px 11px 12px;
   }
 }
@@ -845,15 +870,16 @@ project
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 625px;
+  min-width: 50%;
   height: 1193px;
-  margin: 120px 111px 134px 40px;
+  margin: 0 0 0 3.2%;
   padding: 0 11px 11px 12px;
 }
 
 @media screen and (max-width: 851px) {
   .p-branch-menu__take-out-02 {
     height: 681px;
-    margin: 40px 40px 40px 20px;
+    margin: 0 0 0 2.66%;
     padding: 0 11px 11px 12px;
   }
 }
@@ -944,7 +970,6 @@ project
 
 @media screen and (max-width: 851px) {
   .p-branch-menu__small-01 dd {
-    height: 76px;
     padding: 0 15px 22px 11px;
   }
 }
@@ -953,6 +978,7 @@ project
   .p-branch-menu__small-01 dd {
     height: 72px;
     padding: 0 14px 23px 10px;
+    overflow: hidden;
   }
 }
 
@@ -1013,7 +1039,6 @@ project
 
 @media screen and (max-width: 851px) {
   .p-branch-menu__small-02 dd {
-    height: 76px;
     padding: 0 15px 22px 11px;
   }
 }
@@ -1022,6 +1047,7 @@ project
   .p-branch-menu__small-02 dd {
     height: 72px;
     padding: 0 14px 23px 10px;
+    overflow: hidden;
   }
 }
 
@@ -1071,13 +1097,13 @@ project
 }
 
 .p-access__content h2 {
-  padding: 83px 0 0 119px;
+  padding: 8.74% 0 0 12.52%;
   font-size: 2.25rem;
 }
 
 @media screen and (max-width: 851px) {
   .p-access__content h2 {
-    padding: 40px 0 0 42px;
+    padding: 4.8% 0 0 5.04%;
     font-size: 1.875rem;
   }
 }
@@ -1091,19 +1117,28 @@ project
 }
 
 .p-access__content p {
-  padding: 63.5px 134px 0 119px;
+  padding: 6.63% 14.1% 0 12.52%;
   font-size: 1rem;
   line-height: 2.0;
 }
 
 @media screen and (max-width: 851px) {
   .p-access__content p {
-    padding: 20px 40px 0 40px;
+    padding: 2.4% 5.04% 0 5.04%;
+    max-height: 97.6%;
     font-size: 0.875rem;
   }
 }
 
+@media screen and (max-width: 392px) {
+  .p-access__content p {
+    overflow: hidden;
+  }
+}
+
 .p-footer {
+  position: relative;
+  z-index: 5;
   background-color: #9D8670;
   text-align: center;
   color: #fff;
@@ -1120,7 +1155,7 @@ project
 
 @media screen and (max-width: 392px) {
   .p-footer {
-    margin: 711px 0 0 0;
+    margin: 691px 0 0 0;
   }
 }
 
@@ -1129,7 +1164,7 @@ project
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 39px 0 34px 0;
+  padding: 4.757% 0 4.147% 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1171,5 +1206,90 @@ project
   .p-main-contents__menu-wrapper {
     padding: 0 20px;
   }
+}
+
+.p-pagenation__prev-arrow {
+  position: relative;
+}
+
+.p-pagenation__prev-arrow::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #707070;
+  border-right: 2px solid #707070;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+}
+
+.p-pagenation__prev-arrow::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #707070;
+  border-right: 2px solid #707070;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+          transform: translateY(-50%) rotate(-135deg);
+}
+
+.p-pagenation__next-arrow {
+  position: relative;
+  margin-left: 20px;
+}
+
+.p-pagenation__next-arrow::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #707070;
+  border-right: 2px solid #707070;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.p-pagenation__next-arrow::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #707070;
+  border-right: 2px solid #707070;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.p-pagenation__wrapper {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.p-pagenation__prev, .p-pagenation__next {
+  display: none;
+}
+
+.p-pagenation__page-number {
+  padding: 7px 13px;
 }
 /*# sourceMappingURL=style.css.map */

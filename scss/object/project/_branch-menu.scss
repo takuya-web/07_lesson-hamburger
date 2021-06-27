@@ -5,6 +5,10 @@
   & ul {
     display: flex;
     justify-content: center;
+    padding: 7.8% 9.5% 11.48% 9.5%;
+    @include iPad {
+      padding: 4.8%;
+    }
     @include iPhone {
       display: initial;
     }
@@ -17,12 +21,13 @@
     display: flex;
     flex-direction: column;
     max-width: 625px;
+    min-width: 50%;
     height: 1193px;
-    margin: 120px 40px 134px 111px;
+    margin: 0 3.2% 0 0;
     padding: 0 11px 11px 12px;
     @include iPad {
       height: 681px;
-      margin: 40px 20px 40px 40px;
+      margin: 0 2.66% 0 0;
       padding: 0 11px 11px 12px;
     }
     @include iPhone {
@@ -52,12 +57,13 @@
     display: flex;
     flex-direction: column;
     max-width: 625px;
+    min-width: 50%;
     height: 1193px;
-    margin: 120px 111px 134px 40px;
+    margin: 0 0 0 3.2%;
     padding: 0 11px 11px 12px;
     @include iPad {
       height: 681px;
-      margin: 40px 40px 40px 20px;
+      margin: 0 0 0 2.66%;
       padding: 0 11px 11px 12px;
     }
     @include iPhone {

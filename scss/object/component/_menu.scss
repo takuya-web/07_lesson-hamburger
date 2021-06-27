@@ -50,5 +50,8 @@
     text-align: left;
     font-size: 1rem;
     padding: 0 16% 8% 9%;
+    @include iPhone {
+      padding: 0 16% 12% 9%;
+    }
   }
 }

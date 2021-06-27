@@ -1,0 +1,46 @@
+@import "../../foundation/responsive";
+@import "../../foundation/color.scss";
+
+// prev-arrow
+.p-pagenation {
+  &__prev-arrow {
+    position: relative;
+  }
+  &__prev-arrow::before {
+    @include arrow;
+    transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+  }
+  &__prev-arrow::after {
+    @include arrow;
+    transform: translateY(-50%) rotate(-135deg);
+  }
+  &__next-arrow {
+    position: relative;
+    margin-left: 20px;
+  }
+  &__next-arrow::before {
+    @include arrow;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  &__next-arrow::after {
+    @include arrow;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+}
+
+.p-pagenation__wrapper {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.p-pagenation {
+  &__prev, &__next {
+    display: none;
+  }
+  &__page-number {
+    padding: 7px 13px;
+  }
+}

@@ -31,10 +31,10 @@
     }
 
     & h2 {
-      padding: 83px 0 0 119px;
+      padding: 8.74% 0 0 12.52%;
       font-size: 2.25rem;
       @include iPad {
-        padding: 40px 0 0 42px;
+        padding: 4.8% 0 0 5.04%;
         font-size: 1.875rem;
       };
     }
@@ -42,12 +42,16 @@
       @include h2-bottom-bar__access;
     }
     & p {
-      padding: 63.5px 134px 0 119px;
+      padding: 6.63% 14.1% 0 12.52%;
       font-size: 1rem;
       line-height: 2.0;
       @include iPad {
-        padding: 20px 40px 0 40px;
+        padding: 2.4% 5.04% 0 5.04%;
+        max-height: 97.6%;
         font-size: 0.875rem;
+      }
+      @include iPhone {
+        overflow: hidden;
       }
     }
   }
