@@ -3,6 +3,13 @@
 
 .p-access {
   position: relative;
+  height: 649px;
+  @include iPad {
+    height: 415px;
+  }
+  @include iPhone {
+    height: 691px;
+  }
   & iframe {
     position: absolute;
     z-index: 0;

@@ -8,12 +8,12 @@
   color: #fff;
   font-family: 'M PLUS 1p', sans-serif;
   height: 150px;
-  margin: 649px 367px 0 0;
+  margin: 0 367px 0 0;
   @include iPad {
-    margin: 415px 0 0 0;
+    margin: 0;
   }
   @include iPhone {
-    margin: 691px 0 0 0;
+    margin: 0;
   }
   &__menu {
     list-style: none;
@@ -29,6 +29,7 @@
     border-left: 2px solid #fff;
   }
 }
+
 .p-copyright {
   padding: 0;
   font-size: 0.875rem;

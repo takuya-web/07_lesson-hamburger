@@ -11,6 +11,10 @@
     width: 50%;
     height: 471px;
     object-fit: cover;
+    @include iPad {
+      max-height: 354.5px;
+      object-position: 35%;
+    }
     @include iPhone {
       width: 100%;
       height: 230.53px;
@@ -25,6 +29,9 @@
     width: 50%;
     height: 471px;
     max-height: 471px;
+    @include iPad {
+      max-height: 354.5px;
+    }
     @include iPhone {
       width: 100%;
       max-height: 585.12px;
@@ -33,7 +40,7 @@
       text-align: left;
       font-size: 2.25rem;
       padding: 8% 0 0 9%;
-      @include iPhone {
+      @include iPad {
         font-size: 1.25rem;
       }
     }
@@ -41,7 +48,7 @@
       text-align: left;
       font-size: 1.5rem;
       padding: 8% 0 2.5% 9%;
-      @include iPhone {
+      @include iPad {
         font-size: 1rem;
       }
     }

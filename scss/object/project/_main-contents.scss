@@ -5,19 +5,33 @@
   &__archive {
     font-family: 'M PLUS 1p', sans-serif;
     & h2 {
-      font-size: 1.75rem;
-      padding: 30px 0 0 22px;
+      @include iPad {
+        font-size: 2.25rem;
+        padding: 36px 0 0 39px;
+      }
+      @include iPhone {
+        font-size: 1.75rem;
+        padding: 30px 0 0 22px;
+      }
     }
   }
   &__top-text {
     font-size: 1rem;
-    padding: 30px 18px 19px 22px;
+    @include iPad {
+      padding: 25px 39px 0 39px;
+    }
+    @include iPhone{
+      padding: 30px 18px 19px 22px;
+    }
   }
 }
 
 // メニューラッパー
 .p-main-contents__menu-wrapper {
   padding: 70px 100px 30px 100px;
+  @include iPad {
+    padding: 37px 39px 106.5px 39px;
+  }
   @include iPhone {
     padding: 0 20px;
   }

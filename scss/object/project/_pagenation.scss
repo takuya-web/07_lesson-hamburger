@@ -3,28 +3,32 @@
 
 // prev-arrow
 .p-pagenation {
+  margin-bottom: 31px;
   &__prev-arrow {
     position: relative;
+    padding: 0 20px;
   }
   &__prev-arrow::before {
     @include arrow;
-    transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+    transform: translateX(-100%) translateY(-50%) rotate(-135deg);
   }
   &__prev-arrow::after {
     @include arrow;
-    transform: translateY(-50%) rotate(-135deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-135deg);
   }
   &__next-arrow {
     position: relative;
-    margin-left: 20px;
+    padding: 0 20px;
   }
   &__next-arrow::before {
     @include arrow;
-    transform: translateY(-50%) rotate(45deg);
+    left: 0;
+    transform: translateX(100%) translateY(-50%) rotate(45deg);
   }
   &__next-arrow::after {
     @include arrow;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    left: 0;
+    transform: translateX(50%) translateY(-50%) rotate(45deg);
   }
 }
 
@@ -32,15 +36,43 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 1rem;
   height: 35px;
+  padding: 0 20px;
 }
-
 .p-pagenation {
+  &__title, &__pages {
+    @include iPhone {
+      display: none;
+    }
+  }
   &__prev, &__next {
     display: none;
+    @include iPhone {
+      display: block;
+    }
+  }
+  &__prev {
+    @include iPhone {
+      margin-right: auto;
+    }
   }
   &__page-number {
     padding: 7px 13px;
+    border: 1px solid $gray;
+    margin-left: 15px;
+    @include iPhone {
+      display: none;
+    }
+  }
+  & li:nth-of-type(5) {
+    margin-left: 17.3px;
+  }
+  & li:nth-last-of-type(3) {
+    margin-right: 17.3px;
+  }
+  &__pages {
+    margin-right: 19.3px;
   }
 }
