@@ -1,9 +1,12 @@
 @import "../../foundation/responsive";
 @import "../../foundation/color.scss";
 
-// prev-arrow
+// prev-arrow ※mixinに記載
 .p-pagenation {
-  margin-bottom: 31px;
+  margin-bottom: 64px;
+  @include iPad {
+    margin-bottom: 37px;
+  }
   &__prev-arrow {
     position: relative;
     padding: 0 20px;
@@ -35,11 +38,19 @@
 .p-pagenation__wrapper {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  height: 35px;
-  padding: 0 20px;
+  color: $gray;
+  max-height: 35px;
+  padding: 0 6.511%;
+  @include iPad {
+    padding: 0 4.678%;
+  }
+  @include iPhone {
+    flex-wrap: nowrap;
+  }
 }
 .p-pagenation {
   &__title, &__pages {
@@ -66,7 +77,15 @@
       display: none;
     }
   }
+  & li {
+    margin-bottom: 1px;
+    @include iPhone {
+      margin-bottom: 0;
+    }
+  }
   & li:nth-of-type(5) {
+    background-color: $brown;
+    color: $white;
     margin-left: 17.3px;
   }
   & li:nth-last-of-type(3) {
