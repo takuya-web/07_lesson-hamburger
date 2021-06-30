@@ -21,3 +21,25 @@
     max-height: 42.47px;
   }
 }
+
+//single-pageボタン
+.c-single-page__button {
+  display: inline-block;
+  background-color: $light-beige;
+  color: $brown;
+  border-radius: 20px;
+  border: 1px solid $gray;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 50.652%;
+  height: 16.139%;
+  @include iPad {
+    width: 163.16px;
+    height: 42.47px;
+  }
+  @include iPhone {
+    width: 100%;
+    max-width: 335px;
+    height: 81px;
+  }
+}

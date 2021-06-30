@@ -52,6 +52,9 @@
 //singleページ
 .p-main-contents__single {
   padding: 60px 100px 179px;
+  @include iPad {
+    padding: 60px 60px 60px 70px;
+  }
   @include iPhone{
     padding: 30px 20px 70px;
   }
@@ -61,6 +64,9 @@
   }
   & > p {
     font-size: 1rem;
+    @include iPad {
+      padding-top: 60px;
+    }
     @include iPhone {
       padding-top: 30px;
     }
@@ -68,6 +74,9 @@
   & > h3 {
     font-size: 1.5rem;
     font-weight: bold;
+    @include iPad {
+      padding-top: 60px;
+    }
     @include iPhone {
       padding-top: 34px;
     }
@@ -75,17 +84,31 @@
   & > h4 {
     font-size: 1.25rem;
     font-weight: bold;
+    @include iPad {
+      padding-top: 60px;
+    }
     @include iPhone {
       padding-top: 30px;
     }
   }
-  & aside {
+  &__text-area {
     background-color: $light-gray;
     padding: 50px 55px;
+    font-size: 1rem;
+    margin: 60px 0;
+    @include iPhone {
+      margin-top: 30px 0;
+    }
+    @include iPad {
+      padding: 50px 55px 60px 55px;
+    }
     @include iPhone {
       padding: 30px 18px;
     }
-    & p:last-child {
+    & > p:last-child {
+      @include iPad {
+        padding-top: 60px;
+      }
       @include iPhone {
         padding-top: 30px;
       }
@@ -97,6 +120,9 @@
     object-position: 0 90%;
     height: 500px;
     width: 100%;
+    @include iPad {
+      height: 264px;
+    }
     @include iPhone {
       height: 124px;
       margin-top: 30px;
@@ -108,6 +134,10 @@
   display: flex;
   align-items: flex-start;
   font-size: 1rem;
+  @include iPad {
+    margin-top: 60px;
+    padding-top: 0;
+  }
   & > img {
     width: 43.489%;
   }
@@ -115,8 +145,19 @@
     width: 53.516%;
     margin-left: 2.995%;
     overflow: hidden;
+    @include iPad {
+      max-height: 373px;
+    }
     @include iPhone {
       max-height: 173px;
+    }
+  }
+  &:nth-of-type(2) {
+    @include iPad {
+      flex-direction: row-reverse;
+    }
+    & > p {
+      margin-right: 2.995%;
     }
   }
 }
@@ -124,9 +165,75 @@
 .p-main-contents__menu-list__top {
   display: block;
   object-fit: cover;
-  width: 11.3%;
-  margin: 0 auto;
+  width: 43.489%;
+  margin: 30px auto 0 auto;
   @include iPhone {
     width: 75.863%;
+  }
+}
+.p-main-contents__menu-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 60px 0 53px 0;
+  @include iPhone {
+    grid-template-columns: 1fr;
+    margin: 30px 0 32px 0;
+  }
+  & li {
+    list-style: none;
+  }
+  & li > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-main-contents__menu-list-wrapper {
+  color: $brown;
+  padding: 0 20px;
+  font-size: 1rem;
+  & > ol:nth-of-type(2),
+  & > ul:nth-of-type(2) {
+    padding: 20px 0 20px 18px;
+  }
+  & > ul {
+    list-style: none;
+  }
+  & > ul:nth-of-type(1) {
+    margin-top: 60px;
+  }
+}
+
+.p-main-contents__single__text-box {
+  background-color: $light-gray;
+  padding: 50px 55px;
+  margin: 30px 0;
+  font-size: 1rem;
+  @include iPhone {
+    padding: 50px;
+  }
+  & > p:nth-child(n+2):nth-child(-n+5) {
+    padding-left: 2rem;
+  }
+}
+
+.p-main-contents__single__table {
+  margin: 0 0 30px 0;
+  font-size: 1rem;
+  color: $brown;
+  border-collapse: collapse;
+  width: 100%;
+  &  td {
+    border: 1px solid $gray;
+  }
+  &  td:nth-of-type(1) {
+    width: 41%;
+    padding: 0 0 0 9.04%;
+  }
+  &  td:nth-of-type(2) {
+    width: 59%;
+    padding: 8.435% 0 8.435% 9.04%;
   }
 }
