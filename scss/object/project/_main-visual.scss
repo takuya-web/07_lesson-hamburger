@@ -85,3 +85,38 @@
     }
   }
 }
+
+
+//singleページ
+.p-main-visual__single {
+  background-image: url("../../../images/single_mainvisual_img01.svg");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 530px;
+  margin: 0 367px 0 0;
+
+  @include iPad {
+    height: 285px;
+    background-position: 0 50%;
+    margin: 0;
+  }
+  @include iPhone {
+    height: 285px;
+    background-position: 50% 0;
+  }
+
+  & h1 {
+    font-size: 2.5rem;
+    color: $white;
+    font-family: 'M PLUS 1p', sans-serif;
+    padding: 231px 0 0 5.599%;
+    @include iPad {
+      font-size: 2.25rem;
+      padding: 119px 0 0 86px;
+    }
+    @include iPhone {
+      padding: 119px 0 0 25px;
+    }
+  }
+}

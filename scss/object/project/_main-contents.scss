@@ -1,6 +1,7 @@
 @import "../../foundation/responsive";
 @import "../../foundation/color.scss";
 
+//archiveページ
 .p-main-contents {
   &__archive {
     font-family: 'M PLUS 1p', sans-serif;
@@ -36,7 +37,6 @@
     }
   }
 }
-
 // メニューラッパー
 .p-main-contents__menu-wrapper {
   padding: 70px 0 0 0;
@@ -45,5 +45,88 @@
   }
   @include iPhone {
     padding: 19px 0 0 0;
+  }
+}
+
+
+//singleページ
+.p-main-contents__single {
+  padding: 60px 100px 179px;
+  @include iPhone{
+    padding: 30px 20px 70px;
+  }
+  & > h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  & > p {
+    font-size: 1rem;
+    @include iPhone {
+      padding-top: 30px;
+    }
+  }
+  & > h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    @include iPhone {
+      padding-top: 34px;
+    }
+  }
+  & > h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    @include iPhone {
+      padding-top: 30px;
+    }
+  }
+  & aside {
+    background-color: $light-gray;
+    padding: 50px 55px;
+    @include iPhone {
+      padding: 30px 18px;
+    }
+    & p:last-child {
+      @include iPhone {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  &-menu-image {
+    object-fit: cover;
+    object-position: 0 90%;
+    height: 500px;
+    width: 100%;
+    @include iPhone {
+      height: 124px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.p-main-contents__menu-wrapper {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  & > img {
+    width: 43.489%;
+  }
+  & > p {
+    width: 53.516%;
+    margin-left: 2.995%;
+    overflow: hidden;
+    @include iPhone {
+      max-height: 173px;
+    }
+  }
+}
+
+.p-main-contents__menu-list__top {
+  display: block;
+  object-fit: cover;
+  width: 11.3%;
+  margin: 0 auto;
+  @include iPhone {
+    width: 75.863%;
   }
 }
