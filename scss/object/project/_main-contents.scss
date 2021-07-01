@@ -1,7 +1,7 @@
 @import "../../foundation/responsive";
 @import "../../foundation/color.scss";
 
-//archiveページ
+//archive&archive-searchページ
 .p-main-contents {
   &__archive {
     font-family: 'M PLUS 1p', sans-serif;
@@ -38,7 +38,7 @@
   }
 }
 // メニューラッパー
-.p-main-contents__menu-wrapper {
+.p-main-contents__menu-wrapper__archive {
   padding: 70px 0 0 0;
   @include iPad {
     padding: 37px 0 0 0;
@@ -113,6 +113,7 @@
     object-position: 0 90%;
     max-height: 500px;
     width: 100%;
+    margin-bottom: 60px;
     @include iPad {
       height: 264px;
     }
@@ -147,8 +148,16 @@
   }
   &:nth-of-type(2) {
     flex-direction: row-reverse;
+    margin-top: 60px;
+    @include iPad {
+      margin-top: 117px;
+    }
+    @include iPhone {
+      margin-top: 30px;
+    }
     & > p {
       margin-right: 2.995%;
+      margin-left: 0;
     }
   }
 }
@@ -157,12 +166,13 @@
   display: block;
   object-fit: cover;
   width: 43.489%;
-  margin: 30px auto 0 auto;
+  margin: 60px auto 0 auto;
   @include iPad {
     width: 82.53%;
   }
   @include iPhone {
     width: 75.863%;
+    margin: 30px auto 0 auto;
   }
 }
 .p-main-contents__menu-list {
@@ -218,11 +228,14 @@
 }
 
 .p-main-contents__single__table {
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
   font-size: 1rem;
   color: $brown;
   border-collapse: collapse;
   width: 100%;
+  @include iPhone {
+    margin: 0 0 30px 0;
+  }
   &  td {
     border: 1px solid $gray;
   }
