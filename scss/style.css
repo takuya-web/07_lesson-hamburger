@@ -920,6 +920,58 @@ project
   }
 }
 
+.p-main-visual__page {
+  background-image: url("../../../images/page_mainvisual_img01.svg");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 530px;
+  margin: 0 367px 0 0;
+}
+
+@media screen and (max-width: 851px) {
+  .p-main-visual__page {
+    height: 500px;
+    background-position: 50%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .p-main-visual__page {
+    height: 285px;
+    background-position: 50% 0;
+  }
+}
+
+.p-main-visual__page h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: 'M PLUS 1p', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 0 0 5.599%;
+}
+
+@media screen and (max-width: 851px) {
+  .p-main-visual__page h1 {
+    font-size: 3.75rem;
+    padding: 0 0 0 10.313%;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .p-main-visual__page h1 {
+    font-size: 2.25rem;
+    padding: 0 0 0 25px;
+  }
+}
+
 .p-branch-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
