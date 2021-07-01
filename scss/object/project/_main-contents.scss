@@ -51,9 +51,9 @@
 
 //singleページ
 .p-main-contents__single {
-  padding: 60px 100px 179px;
+  padding: 60px 6.5106% 179px;
   @include iPad {
-    padding: 60px 60px 60px 70px;
+    padding: 60px 7.195% 60px;
   }
   @include iPhone{
     padding: 30px 20px 70px;
@@ -64,9 +64,7 @@
   }
   & > p {
     font-size: 1rem;
-    @include iPad {
-      padding-top: 60px;
-    }
+    padding-top: 60px;
     @include iPhone {
       padding-top: 30px;
     }
@@ -74,9 +72,7 @@
   & > h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    @include iPad {
-      padding-top: 60px;
-    }
+    padding-top: 60px;
     @include iPhone {
       padding-top: 34px;
     }
@@ -84,9 +80,7 @@
   & > h4 {
     font-size: 1.25rem;
     font-weight: bold;
-    @include iPad {
-      padding-top: 60px;
-    }
+    padding-top: 60px;
     @include iPhone {
       padding-top: 30px;
     }
@@ -106,9 +100,8 @@
       padding: 30px 18px;
     }
     & > p:last-child {
-      @include iPad {
-        padding-top: 60px;
-      }
+      padding-top: 60px;
+      overflow: hidden;
       @include iPhone {
         padding-top: 30px;
       }
@@ -118,7 +111,7 @@
   &-menu-image {
     object-fit: cover;
     object-position: 0 90%;
-    height: 500px;
+    max-height: 500px;
     width: 100%;
     @include iPad {
       height: 264px;
@@ -153,9 +146,7 @@
     }
   }
   &:nth-of-type(2) {
-    @include iPad {
-      flex-direction: row-reverse;
-    }
+    flex-direction: row-reverse;
     & > p {
       margin-right: 2.995%;
     }
@@ -167,6 +158,9 @@
   object-fit: cover;
   width: 43.489%;
   margin: 30px auto 0 auto;
+  @include iPad {
+    width: 82.53%;
+  }
   @include iPhone {
     width: 75.863%;
   }
@@ -176,6 +170,10 @@
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 60px 0 53px 0;
+  @include iPad {
+    grid-template-columns: 1fr 1fr;
+    margin: 240px 0 60px 0;
+  }
   @include iPhone {
     grid-template-columns: 1fr;
     margin: 30px 0 32px 0;
@@ -208,11 +206,11 @@
 
 .p-main-contents__single__text-box {
   background-color: $light-gray;
-  padding: 50px 55px;
-  margin: 30px 0;
+  padding: 50px 3.743%;
+  margin: 60px 0 50px 0;
   font-size: 1rem;
-  @include iPhone {
-    padding: 50px;
+  @include iPad {
+    margin: 60px 0;
   }
   & > p:nth-child(n+2):nth-child(-n+5) {
     padding-left: 2rem;
@@ -229,11 +227,19 @@
     border: 1px solid $gray;
   }
   &  td:nth-of-type(1) {
-    width: 41%;
-    padding: 0 0 0 9.04%;
+    width: auto;
+    padding: 2.0976% 0 2.0976% 2.248%;
+    @include iPad {
+      width: 30.4112%;
+      padding: 3.983% 0 3.983% 4.268%;
+    }
   }
   &  td:nth-of-type(2) {
-    width: 59%;
-    padding: 8.435% 0 8.435% 9.04%;
+    width: 69.5888%;
+    padding: 2.0976% 0 2.0976% 2.248%;
+    @include iPad {
+      width: 69.702%;
+      padding: 3.983%  0 3.983% 4.268%;
+    }
   }
 }
